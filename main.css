@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    width: 400px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 10px 2px #252525, 0 0 20px #252525;
+    border-radius: 5px;
+}
+input{
+    width: 100%;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+}
+input::placeholder{
+    color: #e1e1e1;
+}
+input:focus-visible{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px #fff !important;
+}
+
+/*  BUTTON  */
+.btn{
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #12a09f;
+    border-radius: 5px;
+    border: none;
+}
+.btn:hover{
+    background-color: #0dc0c0;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px #0b6b6b;
+}
+.btn:focus-visible{
+    outline: none;
+    box-shadow: 0 0 5px 1px #0b6b6b;
+}
+/*  BUTTON  */
+/*=================================================================================*/
+/* shake effect */
+.btnShake{
+    background-color: #c10;
+    animation: shake .2s linear;
+    position: relative;
+}
+@keyframes shake {
+    0%, 50%, 100%{
+        left: 0;
+    }
+    25%{
+        left: -5px;
+    }
+    75%{
+        left: 5px;
+    }
+}
+/* shake effect */
+/*====================================================================*/
+/*form error*/
+.formErr{
+    background-color: #c10;
+}
+.formErr:hover, .formErr:focus-visible{
+    box-shadow: 0 0 5px 1px #cc1100;
+    background-color: #c10;
+}
+/*form error*/
+/*=====================================================================*/
+/*accept effect*/
+.accept, .accept:hover{
+    background-color: #00c700;
+    box-shadow: 0 0 5px 1px #00c700;
+}
+/*accept effect*/
+/*=====================================================================*/
+
+table{
+    width: 600px;
+    margin-top: 30px;
+    padding: 10px 0px;
+    box-shadow: 0 0 5px 1px #252525, 0 0 10px #234;
+    text-align: center;
+    border-radius: 5px;
+    color: #8f8f8f;
+}
+th, td {
+    max-width: 200px;
+    width: 33%;
+    padding: 5px 10px;
+    color: #cbcbcb;
+    overflow-x: hidden;
+}
+/*user data*/
+.user{
+    position: relative;
+}
+.userDel{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    color: #b9b9b9;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+}
+.userDel:hover{
+    color: #ff1700;
+}
+.user:hover{
+    cursor: pointer;
+}
+.userDel i {
+    display: block;
+    margin: auto;
+}
+/*user data*/
